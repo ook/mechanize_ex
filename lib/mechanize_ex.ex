@@ -1,18 +1,10 @@
+alias MechanizeEx.Agent, as: Agent
+
 defmodule MechanizeEx do
-  @moduledoc """
-  Documentation for MechanizeEx.
-  """
+  def new(host) do
+    Agent.new(host)
+  end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MechanizeEx.hello
-      :world
-
-  """
-  def hello do
-    :world
+  defp agent do
   end
 end
